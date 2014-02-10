@@ -4,7 +4,7 @@
 Summary:	Menhir is a LR(1) parser generator for OCaml
 Name:		menhir
 Version:	20130911
-Release:	1
+Release:	2
 License:	LGPL and QPL with static compilation exception
 Group:		Development/Other
 Url:		http://pauillac.inria.fr/~fpottier/menhir/
@@ -25,7 +25,6 @@ with the standard ocamlyacc and has the following enhancements:
 - it produces reentrant parsers.
 
 %files
-%doc demos/
 %doc manual.pdf
 %{_bindir}/menhir
 %{_mandir}/man1/menhir.1*
@@ -33,9 +32,23 @@ with the standard ocamlyacc and has the following enhancements:
 %dir %{_libdir}/ocaml/menhirLib
 %{_libdir}/ocaml/menhirLib/*.cmi
 %{_libdir}/ocaml/menhirLib/*.cmo
-%{_libdir}/ocaml/menhirLib/*.cmx
 %{_libdir}/ocaml/menhirLib/*.o
 %{_libdir}/ocaml/menhirLib/META
+
+#----------------------------------------------------------------------------
+
+%package devel
+Summary:	Development files for %{name}
+Group:		Development/Other
+Requires:	%{name} = %{EVRD}
+
+%description devel
+The %{name}-devel package contains libraries and signature files for
+developing applications that use %{name}.
+
+%files devel
+%doc demos/
+%{_libdir}/ocaml/menhirLib/*.cmx
 
 #----------------------------------------------------------------------------
 
