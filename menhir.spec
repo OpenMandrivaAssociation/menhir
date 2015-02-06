@@ -4,7 +4,7 @@
 Summary:	Menhir is a LR(1) parser generator for OCaml
 Name:		menhir
 Version:	20130911
-Release:	2
+Release:	3
 License:	LGPL and QPL with static compilation exception
 Group:		Development/Other
 Url:		http://pauillac.inria.fr/~fpottier/menhir/
