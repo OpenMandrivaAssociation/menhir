@@ -7,7 +7,7 @@ Version:	20130911
 Release:	3
 License:	LGPL and QPL with static compilation exception
 Group:		Development/Other
-Url:		http://pauillac.inria.fr/~fpottier/menhir/
+Url:		https://pauillac.inria.fr/~fpottier/menhir/
 Source0:	http://pauillac.inria.fr/~fpottier/menhir/menhir-%{version}.tar.gz
 BuildRequires:	ocaml
 BuildRequires:	ocaml-findlib
